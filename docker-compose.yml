@@ -1,0 +1,8 @@
+gollum:
+    build: ./
+    expose:
+        - "80"
+    volumes:
+        - ./docs/:/wiki
+    ports:
+        - "4567:80"
