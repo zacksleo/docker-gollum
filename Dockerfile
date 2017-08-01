@@ -6,5 +6,3 @@ RUN apt-get -y install cmake
 RUN gem install gollum-rugged_adapter
 VOLUME /wiki
 WORKDIR /wiki
-CMD ["gollum", "--port", "80", "--adapter", "rugged"]
-EXPOSE 80
